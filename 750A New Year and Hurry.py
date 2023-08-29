@@ -19,3 +19,15 @@ if b == True:
     print(j)
 else:
     print(x)
+
+#######################################
+#### simple algorithm #####
+
+n, k = map(int, input().split())
+sum = 0
+i = 1
+
+while i <= n and sum + 5*i <= (240 - k):
+    sum += 5*i
+    i += 1
+print(i - 1)
